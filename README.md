@@ -1,4 +1,4 @@
-# Hungry-OriginalGame-
+# Hungry-OriginalGame
 
 Game:
 The game is an adventure type RPG. The camera angle is like the games Pokemon and Moonlighter where it is mostly pointed downwards.
