@@ -1,39 +1,3 @@
-//Samantha Chung D101
-//301426865
-
-/*
-My game is an action game. You play as a hungry onion who is looking for food
-There are 3 levels that you must complete in order to reach the final boss level 
-Each enemy has a different health value. Spiders and bees follow you and the boss shoots eggs at you
-In order to attack, you will press the mouse button and if you hit an enemy they will bounce back (physics)
-it will only decrease helath once. So, you cannot hold the mouse and run around. This also allows only 1 health point to decrease
-The 3 different levels have different maps and obstacles you cannot walk over.
-To complete the level, you need you reach the chest and click it. This will lead to the story cutscene
-In some levels, you will get food packs to restore your health
-You can also dash by clicking the spacebar but you only have a limited amount until you regain energy
-
-There are 4 achievements. If you kill 30 bees, 25 spiders, finish the game in under 3 minutes and completing the game without using health powerups
-
-All moving animals are animated and when the player hits them, a sound will play (since there are 5, some might not be heard or drown another sound out)
-There are also 5 different BGMs depenidg on the level. They use .play() to  play though since calling the sound in draw will cause it to repeat the first second constantly
-
-The wall collision will sometimes cause the player to move up or to the side even though they do not intended to.
-This was a bug at first but I thought its a good way to incorporate the environment as an obstacle too
-For example in level 2, sometimes you can get stuck in the trees and the only way to get out is to dash out. 
-To me, this seems like a challenge the player needs to figure out instead since escaping is still possible
-
-One more note is the "GillsSans" font not found. I first chose GillSans but the font would not load but after I think the substitute font loaded works well too. So I left it
-
-I have 5 animations, boss, enemy 1, enemy 2, character and main menu image
-Each have their own sound effect when player attacks them and if player is attacked
-The 2 superclasses are MovingObjects and Items
-MovingObjects = BasicEnemy, Projectiles, Boss
-Items = Health and Chest
-BasicEnemy is a subclass from MovingObject but SecondEnemy is a subclass of BasicEnemy
-update(), drawMe(), decreaseHealth() and drawItem() are overridden methods
-In Player, the method hitEnemy() takes in anything typed BasicEnemy so, it accounts for both enemies spiders and bees.
-Containment is in Boss it hold an arraylist for projectiles which both classes extends MovingObject
-*/
 
 Player play;
 Boss boss;
